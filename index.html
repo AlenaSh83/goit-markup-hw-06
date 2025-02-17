@@ -28,7 +28,7 @@
           <li class="info-item"><a class="info-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
-      <button class="btn-burger" type="button">
+      <button class="btn-burger" type="button" data-menu-open>
         <svg 
   class="burger-icon"
   width="24"
@@ -38,11 +38,10 @@
  </svg>
       </button> 
   </div>
-  <div class="mobile-menu ">
+
+  <div class="mobile-menu " data-menu>
 <div class="mobile-menu-conteiner container">
-  
- 
-    <button type="button" class="mobile-close"><svg 
+    <button type="button" class="mobile-close" data-menu-close><svg 
       class="mobile-btl-icon"
       width="8"
       height="8"> 
@@ -51,7 +50,7 @@
      </svg> </button>
      <nav class="mobile-menu-nav">
       <ul class="mobile-menu-list">
-        <li class="mobile-menu-item"><a class="mobile-menu-link current" href="./index.html">Studio</a></li>
+        <li class="mobile-menu-item"><a class="mobile-menu-link current blue" href="./index.html">Studio</a></li>
         <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Portfolio</a></li>
         <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Contacts</a></li>
       </ul>
@@ -59,7 +58,7 @@
     <address class="mobile-menu-info">
       <ul class="mobile-menu-list">
         <li class="mobile-info-item"><a class="mobile-info-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="mobile-info-item"><a class="mobile-info-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <li class="mobile-info-item"><a class="mobile-info-link noir" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
       </ul>
     </address>
     <div class="mobile-conteiner-icon" >
@@ -111,7 +110,7 @@
         <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1> 
        
-        <button class="hero-btn" type="button">Order Service</button>
+        <button type="button" class="hero-btn" data-modal-open>Order Service</button>
       </div>
       </section>
 
@@ -667,9 +666,9 @@
     </footer>
 
 
-    <div class="backdrop ">
+    <div class="backdrop  data-modal ">
 <div class="modal">
-<button type="button" class="modal-close"><svg 
+<button type="button" class="modal-close" data-modal-close><svg 
   class="modal-btl-icon"
   width="8"
   height="8"> 
@@ -747,5 +746,7 @@
 </form>
 </div>
     </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
